@@ -1,15 +1,16 @@
 /* General css */
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #383027;
-    margin-bottom: 100px;
     
   }
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
  p{
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
  }
 
  img {
@@ -90,8 +91,8 @@ body {
 
 .nav-links .active{
   
-    color: #FC3990;
-    border-bottom: 3px solid #FC3990;  
+    color: #28367D;
+   
   }
   
 
@@ -141,6 +142,11 @@ body {
    display: flex;
    justify-content: flex-end;
   }
+
+  .nav-phone a{
+      text-decoration: none;
+      color:#212121
+  }
   .nav-links li {
     list-style: none;
     padding: 0 0 0 40px;
@@ -164,7 +170,7 @@ body {
   }
   .workforcelogin a{
     color: #28367D;
-    font: normal normal 600 16px/25px Lato;
+    font: normal normal 600 16px/25px Poppins;
   }
 
   .contact button{
@@ -174,7 +180,7 @@ body {
   }
   .contact a{
       color: #fff;
-    font: normal normal 600 16px/25px Lato;
+    font: normal normal 600 16px/25px Poppins;
 
   }
 
@@ -188,6 +194,7 @@ body {
       align-items: center;
       position: relative;
       margin-top: 30px;
+      
   }
 
   .cannon-group-info{
@@ -218,8 +225,10 @@ body {
   }
   .underline{
     width: 30px;
+    margin: 0 auto;
     border: 1px solid #28367D;
     margin-top: -10px;
+    float: left;
   }
   .cannon-group-info h5{
     margin-top: 10px;
@@ -231,12 +240,6 @@ body {
 }
 
 
-/* p{
-   
-   
-    font: normal normal normal 14px/22px Lato;
-   
-} */
 .cannon-group-info button{
   
     border-radius: 30px;
@@ -322,7 +325,7 @@ body {
 {
     /* background-color: pink; */
     margin-top: -20px;
-    font: normal normal normal 13px/22px Lato;
+    font: normal normal normal 13px/22px Poppins;
 }
 
 
@@ -561,7 +564,7 @@ transform: translateY(-150%);
     left: 40px;
     color: #fff;
     text-transform: uppercase;
-    font: normal normal 600 15px/22px Lato;
+    font: normal normal 600 15px/22px Poppins;
 }
 
 .event-title{
@@ -570,7 +573,7 @@ transform: translateY(-150%);
     left: 40px;
     color: #fff;
     text-transform: uppercase;
-    font: normal normal 600 15px/22px Lato;
+    font: normal normal 600 15px/22px Poppins;
 }
 .case-study,.news-events{
     flex: 0 0 50%;
@@ -605,7 +608,7 @@ transform: translateY(-150%);
 .contact-us-btn,
 .contact-us-btn-about{
     padding: 8px 20px;
-    font: normal normal 600 15px/30px Lato;
+    font: normal normal 600 15px/30px Poppins;
     color: #28367D;
 }
 
@@ -637,61 +640,89 @@ transform: translateY(-150%);
 .actual-address,.phone-number,.email-address{
     padding-left: 25px;
 }
+
+.phone-number a,
+.email-address a{
+    color: #212121
+}
 .footer{
-    background-color: lightgray;
+    background-color: #E9EAF2;
     /* position: fixed; */
    left: 0;
    bottom: 0;
    width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
-
-    justify-content: center;
-    align-items: center;
-    padding: 50px 100px;
-
+    padding:90px 65px 45px 72px;
     
 }
 
-.cannon-group-logo img{
+.footer-logo{
+    width: 198px;
+    height: auto;
+}
 
+
+.cannon-group-logo{
+   
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-top: 20px;
+    /* margin: 0 auto; */
+    /* background-color: blue; */
     
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
 
-   
-}
 
-.cannon-group-logo,.signup,.quick-links{
-   
-    flex: 0 0 33.333%;
-    padding: 0 20px;
 
 
    
 }
+
+.signup{
+   
+    flex: 0 0 35%;
+    max-width:35%;
+
+   
+}
+
+.quick-links{
+   
+    flex: 0 0 35%;
+    max-width: 35%;
+    /* margin: 0 auto; */
+    
+
+   
+   
+}
+
 
 .signup h5{
-    margin-bottom: 10px;
-}
-.signup .input{
     margin-bottom:10px;
 }
+
 .signup input{
     border:none;
     border-radius: 20px;
-    height: 30px;
-    width: 300px;
+    height: 36px;
+    width: 344px;
     border-color: transparent;
    
 }
 
+::placeholder {
+    color: #707070;
+    opacity: 50%;
+    font-size: 14px;
+    padding:7px 20px ;
+
+  }
+
 .signup button{
-    padding: 5px 20px;
-    background-color: blue;
+    padding: 7px 20px;
+    background-color: #28367D;
     color: #fff;
+   margin-top: 20px;
   
 }
 
@@ -758,13 +789,13 @@ transform: translateY(-150%);
 .combining-human-intelligence-wrapper h2{
     margin-bottom: 10px;
     font-weight: 600;
-    font: normal normal 600 35px/53px Lato;
+    font: normal normal 600 35px/53px Poppins;
 
 }
 
 .combining-human-intelligence-wrapper p{
     max-width: 564px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
 }
 
 .gain-operational-fitness{
@@ -788,14 +819,14 @@ transform: translateY(-150%);
 
 .gain-operational-fitness-info h2{
     padding-right: 103px;
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
 
 }
 
 .get-things-done-faster-info h2{
     padding-right: 6px;
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
 
 
@@ -803,27 +834,27 @@ transform: translateY(-150%);
 
 .our-expert-technology-info h2{
     padding-right: 59px;
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
 
 }
 
 .engaged-service-support-info h2{
     padding-right: 29px;
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
 
 
 }
 .gain-operational-fitness-info p{
     padding-right: 65px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
     padding-bottom: 80px;
 }
 
 .get-things-done-faster-info p{
     padding-right: 100px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
     padding-bottom: 80px;
 
 
@@ -831,13 +862,13 @@ transform: translateY(-150%);
 
 .our-expert-technology-info p{
     padding-right: 43px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
 
 }
 
 .engaged-service-support-info p{
     padding-right: 100px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
 
 }
 
@@ -942,7 +973,7 @@ color: #FFFFFF;
 }
 
 .get-in-touch-with-us-wrapper h2{
-    font: normal normal 600 35px/53px Lato;
+    font: normal normal 600 35px/53px Poppins;
 
 }
 
@@ -969,7 +1000,7 @@ color: #FFFFFF;
 
 .hybrid-approach-wrapper h2{
     margin-bottom: 10px;
-    font: normal normal 600 35px/53px Lato;
+    font: normal normal 600 35px/53px Poppins;
 }
 
 .hybrid-approach-wrapper img{
@@ -999,7 +1030,7 @@ color: #FFFFFF;
 }
 
 .gain-partner-with-extensive-telecom-industry-info1 h2{
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     padding-right: 138px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -1007,12 +1038,12 @@ color: #FFFFFF;
 
 .gain-partner-with-extensive-telecom-industry-info1 p{
     padding-right: 57px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
 }
 
 
 .gain-partner-with-extensive-telecom-industry-info2 h2{
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     padding-right: 80px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -1020,7 +1051,7 @@ color: #FFFFFF;
 
 .gain-partner-with-extensive-telecom-industry-info2 p{
     padding-right: 57px;
-    font: normal normal normal 15px/22px Lato;
+    font: normal normal normal 15px/22px Poppins;
 }
 
 
@@ -1069,7 +1100,7 @@ color: #FFFFFF;
 
 
 .use-actionable-benchmarking-info1 h2{
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     padding-right: 87px;
 }
 
@@ -1081,7 +1112,7 @@ color: #FFFFFF;
 
 
 .use-actionable-benchmarking-info2 h2{
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
     padding-right: 100px;
 
 }
@@ -1137,7 +1168,7 @@ color: #FFFFFF;
   }
   .handle-all-things-telecom-info h2{
     margin-bottom: 10px;
-    font: normal normal 600 30px/46px Lato;
+    font: normal normal 600 30px/46px Poppins;
   }
 
   .handle-all-things-telecom-info ul .and-more::before {
@@ -1230,7 +1261,7 @@ color: #FFFFFF;
 
 .tech-migration  h2{
     margin-bottom: 10px;
-    font: normal normal 600 35px/53px Lato;
+    font: normal normal 600 35px/53px Poppins;
 }
 .tech-migration  p{
     margin-bottom: 10px;
@@ -1311,6 +1342,15 @@ color: #FFFFFF;
 /* ------------------------------------- Media Query--------------------------------------------- */
 
 
+@media screen and (max-width : 1118px){
+
+   
+
+
+
+}
+
+
 @media screen and (max-width : 1041px){
 
 .info1,.info2,.info3{
@@ -1374,8 +1414,9 @@ color: #FFFFFF;
     .enterprise-info{
         padding-right: 50px;
     }
-}
 
+    
+}
 
 @media screen and (max-width : 948px){
     .orchestration-management-info{
@@ -1404,8 +1445,33 @@ color: #FFFFFF;
     font-size: 25px;
    
 }
+
+
+
+
+
 }
 
+@media screen and (max-width : 900px){
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .cannon-group-logo,
+    .signup,
+    .quick-links{
+        margin: 0 ;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cannon-group-logo,
+    .signup{
+        margin-bottom: 30px;
+    }
+}
 
 @media screen and (max-width : 950px){
 
@@ -1430,16 +1496,22 @@ color: #FFFFFF;
             
         }
 
+
+
  
  }
 
 
 @media screen and (max-width : 952px){
 
+body{
+    margin-bottom: 100px;
+}
 .nav-links {
     display:none
 
    }
+
 
    .bottom-nav .bottom-nav-links{
     width: 100%;
@@ -1500,7 +1572,7 @@ color: #FFFFFF;
       .statistic-info{
         flex-wrap: wrap;
     }
-    .statistic-info .info1,
+    /* .statistic-info .info1,
     .statistic-info .info2
    {
         
@@ -1510,15 +1582,15 @@ color: #FFFFFF;
       justify-content: center;
 
 
-    }
+    } */
 
-    .statistic-info .info3{
+    /* .statistic-info .info3{
         flex:0 0 100%;
         max-width: 100%;
        justify-content: center;
        margin-top: 30px;
       
-    }
+    } */
 
 }
 
@@ -1542,7 +1614,12 @@ color: #FFFFFF;
         max-width: 90%;
     }
   .underline{
-      margin-left: 18%;
+    
+        width: 30px;
+        margin:0 auto;
+        margin-top: -10px;
+        float: none;
+      
   }
 
 
@@ -1648,6 +1725,8 @@ color: #FFFFFF;
 .cannon-group-logo,.signup,.quick-links{
    
     padding: 0 ;
+    flex: 0 0 100%;
+    max-width: 100%;
    
 }
 
@@ -1683,7 +1762,9 @@ color: #FFFFFF;
 @media screen and (max-width : 612px){
 
     .statistic-info .info1,
-    .statistic-info .info2
+    .statistic-info .info2,
+    .statistic-info .info3
+
     {
         flex:0 0 100%;
         max-width: 100%;
@@ -1692,11 +1773,11 @@ color: #FFFFFF;
         margin-top: 30px;
     }
 
+ 
     .statistic-info .info3{
-       padding-right:90px;
-      
-    }
-
+        padding-right:60px;
+       
+     }
 
 
    
@@ -1790,11 +1871,6 @@ color: #FFFFFF;
       
     }
 
-
-   
-  .underline{
-      margin-left:1%;
-  }
 
   .dash-line{
       margin: 0;
@@ -1891,7 +1967,6 @@ color: #FFFFFF;
 }
 .contact-data{
     margin: 40px 0;
-    /* margin: 40px; */
    padding-left: 15px;
 }
 
@@ -1907,11 +1982,10 @@ color: #FFFFFF;
 .signup{
     margin-bottom: 20px;
 }
+
 .cannon-group-logo,.signup,.quick-links{
         padding: 0 ;
 
-
-   
 }
   
 }
@@ -1919,7 +1993,7 @@ color: #FFFFFF;
 @media screen and (max-width : 433px){
     
     .statistic-info .info3{
-        padding-right:60px;
+        padding-right:80px;
        
      }
 
@@ -1929,11 +2003,12 @@ color: #FFFFFF;
 }
 }
 
+@media screen and (max-width : 380px){
+    .signup input{
+        width: 270px;
+    }
+}
 
-/* screen sizes
 
-    1. 993
-
-*/
 
 

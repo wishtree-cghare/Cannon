@@ -43,8 +43,8 @@ $(function(){
       if ($(this).prop('href') == window.location.href) {
           // $(this).addClass('active'); $(this).parents('li').addClass('active');
           $(this).css({
-            "color":"#FC3990",
-            "border-bottom": "2px solid FC3990"
+            "color":"#28367D",
+            "border-bottom": "2px solid #28367D"
           })
       }
   });
