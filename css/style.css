@@ -585,7 +585,7 @@ transform: translateY(-150%);
 }
 .contact-outline{
     text-align: center;
-    background: transparent url('/Images/Group\ 390.jpg') 0% 0% no-repeat padding-box;
+    background: transparent url('../Images/Group\ 390.jpg') 0% 0% no-repeat padding-box;
     color: #fff;
     padding: 20px 0 41px 0;
     margin-top: 80px;
@@ -777,7 +777,7 @@ transform: translateY(-150%);
 }
 
 .combining-human-intelligence-wrapper{
-    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('/Images/Mask\ Group\ 17.jpg') no-repeat;
+    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') no-repeat;
 
     color: #FFFFFF;
     padding: 40px 365px;
@@ -799,7 +799,7 @@ transform: translateY(-150%);
 }
 
 .gain-operational-fitness{
-    background: url('/Images/Group\ 371.jpg');
+    background: url('../Images/Group\ 371.jpg');
 
 }
 .gain-operational-fitness-wrapper{
@@ -960,7 +960,7 @@ color: #FFFFFF;
 }
 .get-in-touch-with-us-wrapper{
     margin-top: 15px;
-    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('/Images/Mask\ Group\ 17.jpg') no-repeat;
+    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') no-repeat;
 
     color:#FFFFFF;
     display: flex;
@@ -983,7 +983,7 @@ color: #FFFFFF;
     max-width: 100%;
 }
 .hybrid-approach-wrapper{
-    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('/Images/Mask\ Group\ 17.jpg') no-repeat;
+    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') no-repeat;
 
     /* background: #28367D; */
     padding:90px 0;
@@ -1008,7 +1008,7 @@ color: #FFFFFF;
 }
 
 .gain-partner-with-extensive-telecom-industry{
-    background: url('/Images/Group\ 371.jpg');
+    background: url('../Images/Group\ 371.jpg');
 }
 
 .gain-partner-with-extensive-telecom-industry-wrapper{
@@ -1186,7 +1186,7 @@ color: #FFFFFF;
   }
   .stay-informed-latest-tech-wrapper{
       padding: 40px 170px;
-      background: transparent url('/Images/Group\ 390.jpg') 0% 0% no-repeat padding-box;
+      background: transparent url('../Images/Group\ 390.jpg') 0% 0% no-repeat padding-box;
       color:#FFFFFF;
       margin-top: 60px;
       text-align: center;
@@ -1245,7 +1245,7 @@ color: #FFFFFF;
     max-width: 100%;
 }
 .tech-migration-wrapper{
-    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('/Images/Mask\ Group\ 17.jpg') no-repeat;
+    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') no-repeat;
     /* background: #28367D; */
     padding: 60px 0;
     color: #FFFFFF;

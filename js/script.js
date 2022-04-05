@@ -28,8 +28,8 @@ $(function () {
     dots: false,
     navText: [
      
-      "<img src='../Images/down-arrow.jpg'>",
-      "<img src='../Images/up-arrow.jpg'>",
+      "<img src='Images/down-arrow.jpg'>",
+      "<img src='Images/up-arrow.jpg'>",
     ],
     
   });
