@@ -202,6 +202,56 @@ body {
 
   /* home */
 
+  .banner{
+    position: relative;
+    
+}
+
+
+.banner::before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    background:#28367D;
+    top:15px;
+    left:-10px;
+    bottom:10px;
+    right: 10px;
+    border-radius: 10px;
+    
+}
+
+.right-banner{
+    position: relative;
+}
+
+.right-banner::after{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    background:#28367D;
+    top:15px;
+    left:10px;
+    bottom: 10px;
+    right: -10px;
+    border-radius: 10px;
+}
+
+.home-banner{
+    position: relative;
+}
+.home-banner::after{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    background:#28367D;
+    top:15px;
+    left: 10px;
+    bottom: -10px;
+    right: -10px;
+    border-radius: 10px;
+}
+
 
   .cannon-group-wrapper{
       display: flex;
@@ -213,15 +263,18 @@ body {
   }
 
   .cannon-group-info{
-      flex: 0 0 50%;
-      max-width: 50%;
+      flex: 0 0 55%;
+      max-width: 55%;
       padding-right: 60px;
   }
 
   .cannon-group-banner{
-      flex: 0 0 50%;
-      max-width: 50%;
+      flex: 0 0 calc(45% - 10px);
+      max-width: 45%;
+   
   }
+
+
 
   .cannon-group-banner img{
       background-position: center;
@@ -232,19 +285,6 @@ body {
   }
 
 
-  /* .dash-line{
-        width: 30px;
-        margin: 0 auto;
-        margin-top: -20px;
-        border: 1px solid #28367D;
-  } */
-  /* .underline{
-    width: 30px;
-    margin: 0 auto;
-    border: 1px solid #28367D;
-    margin-top: -10px;
-    float: left;
-  } */
   .cannon-group-info h5{
     margin-top: 10px;
 }
@@ -381,59 +421,12 @@ body {
 
 .enterprise-banner
 {
-    flex: 0 0 45%;
+    flex: 0 0 calc(45% - 10px);
     max-width: 45%;
 
   
 }
 
-.banner{
-    position: relative;
-}
-
-
-.banner::before{
-    content:"";
-    position: absolute;
-    z-index: -1;
-    background:#28367D;
-    top:15px;
-    left: -15px;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 10px;
-}
-
-.right-banner{
-    position: relative;
-}
-
-.right-banner::after{
-    content:"";
-    position: absolute;
-    z-index: -1;
-    background:#28367D;
-    top:15px;
-    left: 15px;
-    bottom: 15px;
-    right: -15px;
-    border-radius: 10px;
-}
-
-.home-banner{
-    position: relative;
-}
-.home-banner::after{
-    content:"";
-    position: absolute;
-    z-index: -1;
-    background:#28367D;
-    top:15px;
-    left: 15px;
-    bottom: -15px;
-    right: -15px;
-    border-radius: 10px;
-}
 
 .enterprise-banner img,
 .technology-migration-banner img,
@@ -479,7 +472,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 80px;
-    justify-content: space-between;
+    
     
 }
 
@@ -1729,20 +1722,38 @@ body{
     
     .cannon-group-wrapper{
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        
     }
 
-    .cannon-group-info,
-    .cannon-group-banner{
+    .cannon-group-info{
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;
         padding: 0;
+        order: 2;
+    }
+    .cannon-group-banner{
+        flex: 0 0 calc(100% - 10px);
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        order: 1;
     }
 
-    .cannon-group-banner{
-        flex: 0 0 90%;
-        max-width: 90%;
+
+
+    .cannon-group-info{
+        margin-top: 20px;
+    }
+
+
+    .under-line h3::before{
+
+       
+        top: 30px;
+        left:47%;
+       
+       
     }
 
 
@@ -1762,7 +1773,7 @@ body{
   }
 
   .enterprise-banner{
-      flex: 0 0 80%;
+      flex: 0 0 calc(80% - 10px);
       max-width: 80%;
   }
 
@@ -1779,7 +1790,7 @@ body{
       padding: 0;
   }
   .technology-migration-banner{
-      flex: 0 0 80%;
+      flex: 0 0 calc(80% - 10px);
       max-width: 80%;
      
   }
@@ -1899,7 +1910,9 @@ body{
 
  
     .statistic-info .info3{
-        padding-right:60px;
+      
+        padding-right:100px;
+        /* margin: 0; */
        
      }
 
@@ -1983,62 +1996,96 @@ body{
     
     .cannon-group-wrapper{
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        
     }
 
-    .cannon-group-info,
-    .cannon-group-banner{
+    .cannon-group-info{
         flex: 0 0 100%;
         max-width: 100%;
         text-align: left;
+        order:2
+      
+    }
+    .cannon-group-banner{
+        flex: 0 0 calc(100% - 10px);
+        max-width: 100%;
+        text-align: left;
+        order: 1;
         
       
     }
 
 
-  .dash-line{
-      margin: 0;
-  }
+    .dash-line h2::before{
+       
+        left: 0;
+        
+    
+    }
+
+    .under-line h3::before{
+        left: 0;
+    }
+
+    .fortune-companies-wrapper .dash-line h2::before{
+        left:47%
+    }
+
+    .contact-outline .dash-line h2::before{
+        left: 47%;
+        top:80px
+    }
+
+    .cannon-group-info .under-line h3::before{
+        top: 25px;
+    }
+
+
   .statistics-wrapper{
       text-align: left;
   }
   .statistic-info .info1,
-    .statistic-info .info2
+    .statistic-info .info2,
+    .statistic-info .info3
     {
        
         justify-content: flex-start;
       
     }
 
-    .statistic-info .info3{
-       padding-right:150px;
-      
-    }
 
   .enterprise-wrapper{
       flex-wrap: wrap;
-      justify-content: center;
+      /* justify-content: center; */
       
   }
-  .enterprise-info,
+  .enterprise-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    padding: 0;
+  }
   .enterprise-banner
   {
 
-      flex: 0 0 100%;
+      flex: 0 0 calc(100% - 10px);
       max-width: 100%;
-      text-align: left;
-      padding: 0;
-        
+     
   }
 
  
-  .technology-migration-info,
+  .technology-migration-info{
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    padding: 0;
+  }
   .technology-migration-banner
   {
-      flex: 0 0 100%;
+      flex: 0 0 calc(100% - 10px);
       max-width: 100%;
-      text-align: left;
-      padding: 0;
+     
   }
  
 
@@ -2113,6 +2160,14 @@ body{
 }
   
 }
+
+@media screen and (max-width : 485px){
+
+    .cannon-group-info .under-line h3::before{
+        top:55px
+    }
+}
+
 
 @media screen and (max-width : 433px){
     
