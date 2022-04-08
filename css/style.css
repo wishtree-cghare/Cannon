@@ -745,17 +745,12 @@ transform: translateY(-150%);
    bottom: 0;
    max-width: 1170px;
    display: flex;
-   margin: 0 auto;
-    
-    /* padding:90px 65px 45px 72px; */
+   flex-wrap: wrap;
+   justify-content: space-between;
+    padding: 60px 30px;
     
 }
 
-
-.footer-logo{
-    width: 300px;
-    height: auto;
-}
 
 .fb-insta{
    
@@ -783,11 +778,8 @@ transform: translateY(-150%);
 .signup,
 .quick-links{
    
-    flex: 0 0 33.333%;
+    flex: 0 0 calc(33.333% - 40px);
     max-width: 33.333%;
-    padding-top: 20px;
-   
-   
 }
 
 
@@ -1483,13 +1475,7 @@ color: #FFFFFF;
 /* ------------------------------------- Media Query--------------------------------------------- */
 
 
-@media screen and (max-width : 1118px){
 
-   
-
-
-
-}
 
 
 @media screen and (max-width : 1041px){
@@ -1508,6 +1494,10 @@ color: #FFFFFF;
     
     .nav-links li {
         padding: 0 0 0 30px;
+      }
+
+      .signup input{
+         max-width: 300px;
       }
 }
 
