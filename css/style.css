@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #383027;
+    font-size: 15px;
     
   }
   * {
@@ -11,6 +12,12 @@ body {
   }
  p{
     font: normal normal normal 15px/22px Poppins;
+    line-height: 1.4rem;
+ }
+
+
+ h1{
+     line-height: 1.5rem;
  }
 
  img {
@@ -43,6 +50,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-height: calc(100vh - 80px);
+    overflow: auto;
   }
 
   .sidebar-links{
@@ -72,9 +81,10 @@ body {
       font-size: 2rem;
       background: transparent;
       border: transparent;
-      color:#bb2525
+      color:#28367D
 
   }
+  
   .nav-btn{
     display: none;
     
@@ -195,8 +205,8 @@ body {
     border-radius: 20px;
 
       color: #fff;
-    font-weight:600
-
+    font-weight:600;
+    
   }
 
 
@@ -349,7 +359,6 @@ body {
 }
 
 
-
 .stat-img-info{
 
     padding-left: 20px;
@@ -363,10 +372,17 @@ body {
 {
     
     color: #28367D;
-    font-size: 25px;
+    font-size: 45px;
    
 }
 
+.contact-negotiation-text,
+.mobile-tickets-text,
+.statisfaction-text
+
+{
+    padding-top: 16px;
+}
 .under-line{
 
     position: relative;
@@ -378,7 +394,7 @@ body {
     content: "";
     position: absolute;
     height: 2px;
-    width: 50px;
+    width: 30px;
     top: 30px;
     left:0;
     background: #28367D;
@@ -391,7 +407,7 @@ body {
     content: "";
     position: absolute;
     height: 2px;
-    width: 50px;
+    width: 30px;
     top: 35px;
     left: 48%;
     background: #28367D;
@@ -666,8 +682,13 @@ transform: translateY(-150%);
     text-align: center;
     background: url('../Images/Group\ 390.jpg') center/cover no-repeat ;
     color: #fff;
-    padding: 20px 0 41px 0;
+    padding: 40px 0;
     margin-top: 80px;
+}
+
+
+.contact-outline h2{
+    /* margin-bottom: 32px; */
 }
 
 .contact-outline .dash-line h2::before{
@@ -685,13 +706,24 @@ transform: translateY(-150%);
     align-items: center;
 
 }
-.contact-us-btn,
-.contact-us-btn-about{
+.contact-us-btn{
     padding: 8px 20px;
     font: normal normal 600 15px/30px Poppins;
-    color: #28367D;
+    color: #28367D
 }
 
+.contact-us-btn-about{
+
+    padding: 8px 20px;
+    font: normal normal 600 15px/30px Poppins;
+    border-radius: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #28367D;
+}
+.contact-outline-about{
+    margin-top: 32px;
+
+}
 .map,.contact-data{
     flex:0 0 50%;
     max-width: 50%;
@@ -730,6 +762,7 @@ transform: translateY(-150%);
 .footer-section .container{
     background-color: #E9EAF2;
     max-width: 100%;
+    
 }
 
 .footer-wrapper{
@@ -740,7 +773,8 @@ transform: translateY(-150%);
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-    padding: 60px 30px;
+    padding: 30px 72px;
+    margin: 0 auto;
     
 }
 
@@ -749,31 +783,27 @@ transform: translateY(-150%);
    
    
     margin-top: 30px;
-    display: flex;
-    /* justify-content: space-between; */
-    margin-left: 80px;
-
+   text-align: center;
 }
 
 .fb-insta img{
-    flex: 0 0 30%;
-    max-width: 30%;
+   
+    width: 20px;
+    height: auto;
+    margin: 0 10px;
 }
 
-  
-  .fb-insta img{
-    margin: 0 30px;
-    
-  }
+
 
 
 .cannon-group-logo,
 .signup,
 .quick-links{
    
-    flex: 0 0 calc(33.333% - 40px);
+    flex: 0 0 calc(33.333% - 100px);
     max-width: 33.333%;
 }
+
 
 
 .signup h5{
@@ -795,8 +825,6 @@ transform: translateY(-150%);
     color: #707070;
     opacity: 50%;
     font-size: 14px;
-    
-
   }
 
   input,
@@ -835,20 +863,35 @@ transform: translateY(-150%);
 
 /* ---------------------------------- ABout ------------------------------------------------- */
 
+.about-img {
+    position: relative;
+    padding-bottom: 63%;
+  }
+
+  .about-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 .schedule-project-assessment-call-wrapper{
     display: flex;
     align-items: center;
     margin-top: 80px;
+    justify-content: space-between;
 }
 
 .schedule-project-assessment-call-info,
 .schedule-project-assessment-call-banner{
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 15px);
     max-width: 50%;
 }
-.schedule-project-assessment-call-info{
+/* .schedule-project-assessment-call-info{
     padding-left: 65px;
-}
+} */
 
 .schedule-project-assessment-call-info h2{
     margin-bottom: 10px;
@@ -874,8 +917,7 @@ transform: translateY(-150%);
     background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') center/cover no-repeat;
 
     color: #FFFFFF;
-    padding: 87px 365px;
-    height: 350px;
+    padding: 87px 0px;
     text-align: center;
     margin-top: 15px;
 }
@@ -883,11 +925,16 @@ transform: translateY(-150%);
 .combining-human-intelligence-wrapper h2{
     margin-bottom: 10px;
     font-weight: 600;
+    max-width: 636px;
+    margin: 0 auto;
+    /* line-height: 53px; */
 
 }
 
 .combining-human-intelligence-wrapper p{
-    /* max-width: 564px; */
+    max-width: 564px;
+    margin: 0 auto;
+    
   
 }
 
@@ -906,21 +953,26 @@ transform: translateY(-150%);
 .get-things-done-faster-info,
 .our-expert-technology-info,
 .engaged-service-support-info{
-    flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 15px);
     max-width: 50%;
 }
 
 .gain-operational-fitness-info h2{
     padding-right: 103px;
     font: normal normal 600 30px/46px Poppins;
-    margin-bottom: 10px;
+    margin-top: 20px;
 
+}
+
+.gain-operational-fitness-info p,
+.get-things-done-faster-info p{
+    margin-top: 10px;
 }
 
 .get-things-done-faster-info h2{
     padding-right: 6px;
     font: normal normal 600 30px/46px Poppins;
-    margin-bottom: 10px;
+    margin-top: 20px;
 
 
 }
@@ -953,15 +1005,23 @@ transform: translateY(-150%);
 
 }
 
+
+.our-expert-technology-info h2,
+.engaged-service-support-info h2{
+    margin-top: 20px;
+}
 .our-expert-technology-info p{
     padding-right: 43px;
     font: normal normal normal 15px/22px Poppins;
+    margin-top: 10px;
 
 }
 
 .engaged-service-support-info p{
     padding-right: 100px;
     font: normal normal normal 15px/22px Poppins;
+    margin-top: 10px;
+
 
 }
 
@@ -1093,13 +1153,10 @@ color: #FFFFFF;
 }
 .hybrid-approach-wrapper{
     background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') center/cover  no-repeat;
-
-    /* background: #28367D; */
-    padding:90px 0;
+    padding:87px 0;
     color: #FFFFFF;
     text-align: center;
     margin-top: 15px;
-    height: 350px;
 
 }
 
@@ -1109,7 +1166,6 @@ color: #FFFFFF;
 
 .hybrid-approach-wrapper h2{
     margin-bottom: 10px;
-    font: normal normal 600 35px/53px Poppins;
 }
 
 .hybrid-approach-wrapper img{
@@ -1128,7 +1184,7 @@ color: #FFFFFF;
 }
 .gain-partner-with-extensive-telecom-industry-info1,
 .gain-partner-with-extensive-telecom-industry-info2{
-    flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 15px);
     max-width: 50%;
 }
 
@@ -1167,8 +1223,8 @@ color: #FFFFFF;
 }
 
 .discover-assess-deliver-wrapper img{
-    width: 60px;
-    height: 60px;
+    width: 34px;
+    height: auto;
 }
 
 .discover-assess-deliver-info1,
@@ -1178,7 +1234,7 @@ color: #FFFFFF;
     flex: 0 0 calc(33.333% - 48px);
     max-width: 33.333%;
     display: flex;
-    align-items: center;
+   
 }
 
 .discover-assess-deliver-info1-data,
@@ -1199,7 +1255,7 @@ color: #FFFFFF;
 }
 .use-actionable-benchmarking-info1,
 .use-actionable-benchmarking-info2{
-    flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 15px);
     max-width: 50%;
 }
 
@@ -1245,7 +1301,7 @@ color: #FFFFFF;
   
   .handle-all-things-telecom-info,
   .handle-all-things-telecom-banner{
-    flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 25px);
     max-width: 50%;
     /* background-color: red; */
   }
@@ -1306,6 +1362,11 @@ color: #FFFFFF;
       margin-bottom: 10px;
   }
 
+  .stay-informed-latest-tech-wrapper p{
+      max-width: 1026px;
+      margin: 0 auto;
+  }
+
 
 
   .schedule-enterprise-optimization-wrapper{
@@ -1317,7 +1378,7 @@ color: #FFFFFF;
 
 .schedule-enterprise-optimization-info,
 .schedule-enterprise-optimization-banner{
-    flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 25px);
     max-width: 50%;
 }
 /* .schedule-enterprise-optimization-info{
@@ -1362,7 +1423,6 @@ color: #FFFFFF;
     color: #FFFFFF;
     text-align: center;
     margin-top: 15px;
-    height: 350px;
 
 }
 
@@ -1372,7 +1432,7 @@ color: #FFFFFF;
 
 .tech-migration  h2{
     margin-bottom: 10px;
-    font: normal normal 600 35px/53px Poppins;
+    /* font: normal normal 600 35px/53px Poppins; */
 }
 .tech-migration  p{
     margin-bottom: 10px;
@@ -1415,22 +1475,22 @@ color: #FFFFFF;
     display: flex;
     align-items: center;
     margin-top: 80px;
+    justify-content: space-between;
 }
 
-.new-telecom-tech-info{
-    flex: 0 0 53%;
-    max-width: 53%;
+.new-telecom-tech-info
+
+{
+    flex: 0 0 calc(50% - 15px);
+    max-width: 50%;
 }
 .new-telecom-tech-banner
 {
-    flex: 0 0 47%;
-    max-width: 47%;
+    flex: 0 0 48%;
+    max-width: 50%;
 }
 
-.new-telecom-tech-info{
-    padding-left: 66px;
 
-}
 
 .new-telecom-tech-info h2{
     margin-bottom: 10px;
@@ -1470,6 +1530,13 @@ color: #FFFFFF;
 
 
 
+@media screen and (max-width : 1125px){
+    
+    .quick-links{
+        max-width: 100%;
+       
+    }
+}
 
 @media screen and (max-width : 1041px){
 
@@ -1489,9 +1556,6 @@ color: #FFFFFF;
         padding: 0 0 0 30px;
       }
 
-      .signup input{
-         max-width: 300px;
-      }
 }
 
 @media screen and (max-width : 1011px){
@@ -1542,6 +1606,40 @@ color: #FFFFFF;
     
 }
 
+@media screen and (max-width : 966px){
+    .under-line h3::before{
+
+       
+        top: 55px;
+        left:0;
+       
+       
+    }
+}
+
+@media screen and (max-width : 975px){
+
+   .footer-wrapper{
+    padding: 30px 30px;
+    
+   }
+
+}
+
+
+ @media screen and (max-width : 851px){
+
+    .footer-wrapper{
+     padding: 30px 5px;
+    
+    }
+
+    .quick-links{
+        max-width: 100%;
+       
+    }
+ }
+
 @media screen and (max-width : 948px){
     .orchestration-management-info{
         padding-right: 30px;
@@ -1576,26 +1674,6 @@ color: #FFFFFF;
 
 }
 
-@media screen and (max-width : 900px){
-
-    .footer{
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding-left: 15px;
-    }
-    .cannon-group-logo,
-    .signup,
-    .quick-links{
-        margin: 0 ;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .cannon-group-logo,
-    .signup{
-        margin-bottom: 30px;
-    }
-}
 
 @media screen and (max-width : 950px){
 
@@ -1607,6 +1685,7 @@ color: #FFFFFF;
         align-items:center;
         
     }
+}
 
 
     @media screen and (max-width : 980px){
@@ -1620,9 +1699,6 @@ color: #FFFFFF;
             
         }
 
-
-
- 
  }
 
 
@@ -1720,6 +1796,8 @@ body{
 
 @media screen and (max-width : 812px){
     
+
+    
     .cannon-group-wrapper{
         flex-wrap: wrap;
         
@@ -1728,13 +1806,18 @@ body{
     .cannon-group-info{
         flex: 0 0 100%;
         max-width: 100%;
-        text-align: center;
+        text-align: left;
         padding: 0;
         order: 2;
+        padding-top: 20px;
+    }
+
+    .cannon-group-info .under-line h3::before{
+        left: 0;
     }
     .cannon-group-banner{
         flex: 0 0 calc(100% - 10px);
-        max-width: 100%;
+        max-width: 1000%;
         text-align: center;
         padding: 0;
         order: 1;
@@ -1756,42 +1839,66 @@ body{
        
     }
 
+    .statistics-wrapper h2{
+        text-align: left;
+    }
 
+    .statistics-wrapper h2::before{
+        left: 0%;
+    }
 
   .enterprise-wrapper{
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: center;     
       
   }
   .enterprise-info{
 
       flex: 0 0 100%;
       max-width: 100%;
-      text-align: center;
-      padding: 0;
+      text-align: left;
+      padding: 0 ;
+      order: 2;
+      padding-top: 20px;
+
         
   }
 
-  .enterprise-banner{
-      flex: 0 0 calc(80% - 10px);
-      max-width: 80%;
+  .banner{
+    margin-left: 10px;
+
   }
+
+  .right-banner{
+      margin-right: 10px;
+  }
+
+  .enterprise-banner{
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+  }
+
 
   .technology-migration-wrapper{
       flex-wrap: wrap;
       justify-content: center;
-      flex-direction: column-reverse;
+      
   }
 
   .technology-migration-info{
       flex: 0 0 100%;
       max-width: 100%;
-      text-align: center;
+      text-align: left;
       padding: 0;
+      order: 2;
+      padding-top: 20px;
+
   }
   .technology-migration-banner{
-      flex: 0 0 calc(80% - 10px);
-      max-width: 80%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
      
   }
 
@@ -1804,34 +1911,68 @@ body{
 .orchestration-management-info{
     flex: 0 0 100%;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 0;
+    order: 2;
+    padding-top: 20px;
+
 
 }
 .orchestration-management-banner{
-    flex: 0 0 80%;
-    max-width: 80%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 1;
    
 }
 
 .cost-containment-wrapper{
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column-reverse;
+    
 }
 
 .cost-containment-info{
     flex: 0 0 100%;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 0;
+    order: 2;
+    padding-top: 20px;
+
 
 }
 .cost-containment-banner{
-    flex: 0 0 80%;
-    max-width: 80%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 1;
    
 }
+
+
+  
+.footer-wrapper{
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* width: 100%; */
+    padding: 0 15px;
+    
+}
+
+
+.cannon-group-logo,
+.signup{
+    margin-bottom: 20px;
+}
+
+.cannon-group-logo,.signup,.quick-links{
+   
+    padding: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+   
+}
+
+
 
   
 }
@@ -1867,6 +2008,13 @@ body{
 
 }
 
+@media screen and (max-width : 675px){
+    .contact-outline .dash-line h2::before{
+        left: 47%;
+        top:80px
+    }
+
+}
 
 
 @media screen and (max-width : 679px){
@@ -1891,6 +2039,10 @@ body{
    
 }
 
+.quick-links{
+    max-width: 100%;
+}
+
 }
 
 
@@ -1903,18 +2055,12 @@ body{
     {
         flex:0 0 100%;
         max-width: 100%;
-        justify-content: center;
-       
         margin-top: 30px;
     }
 
- 
-    .statistic-info .info3{
-      
-        padding-right:100px;
-        /* margin: 0; */
-       
-     }
+    .under-line h3::before{
+        left: 0;
+    }
 
 
    
@@ -1931,7 +2077,7 @@ body{
 @media screen and (max-width : 768px){
     .contact-us{
         flex-wrap: wrap;
-        flex-direction: column;
+        padding-left: 15px;
     }
  
     .map{
@@ -1968,7 +2114,7 @@ body{
 
    .contact-us{
        flex-wrap: wrap;
-       flex-direction: column;
+       /* flex-direction: column; */
    }
 
    .map{
@@ -2063,7 +2209,7 @@ body{
     flex: 0 0 100%;
     max-width: 100%;
     text-align: left;
-    padding: 0;
+    /* padding: 0; */
   }
   .enterprise-banner
   {
@@ -2079,7 +2225,7 @@ body{
     flex: 0 0 100%;
     max-width: 100%;
     text-align: left;
-    padding: 0;
+    /* padding: 0; */
   }
   .technology-migration-banner
   {
@@ -2143,8 +2289,9 @@ body{
 
 
 
-.footer{
+.footer-wrapper{
     padding-left: 15px;
+    align-items: flex-start;
 }
 
 
@@ -2180,7 +2327,7 @@ body{
          margin: 0 30px;
      }
 }
-}
+
 
 @media screen and (max-width : 380px){
     .signup input{

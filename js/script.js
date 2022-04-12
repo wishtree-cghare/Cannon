@@ -40,12 +40,70 @@ $(function () {
 
 $(function(){
   $('.nav-link').each(function(){
+    console.log('link ******')
+    console.log(window.location.pathname)
       if ($(this).prop('href') == window.location.href) {
           // $(this).addClass('active'); $(this).parents('li').addClass('active');
           $(this).css({
             "color":"#28367D",
             "border-bottom": "2px solid #28367D"
           })
+         
       }
-  });
-});
+
+      if(window.location.pathname === '/contact.html'){
+        console.log("hii")
+        console.log(this)
+        $('.contact-href').css({
+          "color":"#FFFFFF",
+          "border-bottom": "2px solid #E1E1E1"
+
+        })
+
+        $('.contact-href').hover(function(){
+          $(this).css({
+           
+
+          "color": "#28367D",
+
+          
+          });
+        }, function(){
+        $(this).css({
+         
+          "color":"#FFFFFF",
+          
+        });
+      })
+      }
+
+      if(window.location.pathname === '/workforcelogin.html'){
+        console.log("hii")
+        console.log(this)
+        $('.workforce-href').css({
+          // "border-bottom": "2px solid #28367D",
+          // "color":"#FFFFFF",
+          // "background": "#28367D"
+          
+        })
+
+        $('.workforce-href').hover(function(){
+          $(this).css({
+           
+          "color":"#FFFFFF",
+
+          
+          });
+        }, function(){
+        $(this).css({
+         
+          "color": "#28367D",
+          
+        });
+      })
+    }
+      
+
+  
+})
+})
