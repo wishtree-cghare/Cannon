@@ -18,6 +18,42 @@ closeBtn.addEventListener("click", function () {
 
 // sliding 
 $(function () {
+  if(window.screen.width <= 478){
+    $("#testimonials").owlCarousel({
+      items: 3,
+      autoplay: false,
+      smartSpeed: 700,
+      loop: true,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: false,
+      navText: [
+       
+        "<img src='Images/down-arrow.jpg'>",
+        "<img src='Images/up-arrow.jpg'>",
+      ],
+      
+    });
+  }
+
+  else if(window.screen.width <= 400){
+    $("#testimonials").owlCarousel({
+      items: 2,
+      autoplay: false,
+      smartSpeed: 700,
+      loop: true,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: false,
+      navText: [
+       
+        "<img src='Images/down-arrow.jpg'>",
+        "<img src='Images/up-arrow.jpg'>",
+      ],
+      
+    });
+  }
+  else{
   $("#testimonials").owlCarousel({
     items: 5,
     autoplay: false,
@@ -33,6 +69,7 @@ $(function () {
     ],
     
   });
+}
 });
 
 
@@ -107,3 +144,25 @@ $(function(){
   
 })
 })
+
+// if(window.screen.width === 478){
+//   console.log('screen size',window.screen.width)
+
+//   $(function () {
+//     $("#testimonials").owlCarousel({
+//       items: 3,
+//       autoplay: false,
+//       smartSpeed: 700,
+//       loop: true,
+//       autoplayHoverPause: true,
+//       nav: true,
+//       dots: false,
+//       navText: [
+       
+//         "<img src='Images/down-arrow.jpg'>",
+//         "<img src='Images/up-arrow.jpg'>",
+//       ],
+      
+//     });
+//   });
+// }

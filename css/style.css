@@ -623,12 +623,20 @@ transform: translateY(-150%);
 
 .owl-theme .owl-nav [class*=owl-]{
     background-color: transparent;
+    
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+
+    background-color:#f8f8ff;
+    color: #FFF;
+    text-decoration: none;
 }
 .owl-next{
     float: right;
 transform: translateY(-150%);
 
 }
+
 
 
 .testimonal{
@@ -1068,6 +1076,18 @@ border-radius: 20px;
 margin: 20px 0;
 }
 
+.email-us-inputs input:focus,
+.email-us-inputs textarea:focus
+
+
+{
+
+    /* border: 0; */
+    outline: 0;
+
+    }
+
+
 .email-us-inputs textarea{
     width: 750px;
 height: 72px;
@@ -1129,7 +1149,7 @@ color: #FFFFFF;
 }
 .get-in-touch-with-us-wrapper{
     margin-top: 15px;
-    background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') center/cover no-repeat;
+    background:linear-gradient(rgba(40, 54, 125, 0.9),rgba(40, 54, 125, 0.8)),url('../Images/touch-with-us.jpg') center/cover no-repeat;
 
     color:#FFFFFF;
     display: flex;
@@ -2011,7 +2031,16 @@ body{
 @media screen and (max-width : 675px){
     .contact-outline .dash-line h2::before{
         left: 47%;
-        top:80px
+        top:40px
+    }
+
+}
+
+
+@media screen and (max-width : 633px){
+    .contact-outline .dash-line h2::before{
+        left: 47%;
+        top:70px
     }
 
 }
@@ -2109,6 +2138,13 @@ body{
 
 }
 
+@media screen and (max-width : 413px){
+
+    .fortune-companies-wrapper h2::before{
+        top:70px
+    }
+
+}
 
 @media screen and (max-width : 540px){
 
