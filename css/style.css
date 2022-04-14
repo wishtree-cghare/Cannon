@@ -19,6 +19,9 @@ body {
  h1{
      line-height: 1.5rem;
  }
+ h2{
+    font: normal normal 600 30px/46px Poppins;
+ }
 
  img {
     vertical-align: top !important;
@@ -50,7 +53,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 20px);
     overflow: auto;
   }
 
@@ -708,6 +711,11 @@ transform: translateY(-150%);
     margin-top: 32px;
 }
 
+.contactus .container{
+    max-width: 100%;
+    padding: 0;
+  
+}
 .contact-us{
     display: flex;
     flex-wrap: wrap;
@@ -727,6 +735,7 @@ transform: translateY(-150%);
     border-radius: 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     color: #28367D;
+    text-decoration: none;
 }
 .contact-outline-about{
     margin-top: 32px;
@@ -743,7 +752,7 @@ transform: translateY(-150%);
     object-fit: cover;
 }
 .contact-data{
-    padding: 0 40px;
+    padding: 0 15px;
     margin-top: 0;
    
 }
@@ -966,67 +975,76 @@ transform: translateY(-150%);
 }
 
 .gain-operational-fitness-info h2{
-    padding-right: 103px;
+    /* padding-right: 103px; */
+    max-width: 485px;
     font: normal normal 600 30px/46px Poppins;
     margin-top: 20px;
 
 }
 
-.gain-operational-fitness-info p,
-.get-things-done-faster-info p{
+.gain-operational-fitness-info p{
     margin-top: 10px;
+    max-width: 520px;
 }
 
 .get-things-done-faster-info h2{
-    padding-right: 6px;
+    max-width: 469px;
     font: normal normal 600 30px/46px Poppins;
     margin-top: 20px;
 
 
+}
+.get-things-done-faster-info p{
+    margin-top: 10px;
+    max-width: 533px;
 }
 
 .our-expert-technology-info h2{
-    padding-right: 59px;
+    max-width: 526px;
     font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
+    margin-top: 20px;
+
 
 }
 
 .engaged-service-support-info h2{
-    padding-right: 29px;
+
+    max-width: 530px;
     font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
-
-
-}
-.gain-operational-fitness-info p{
-    padding-right: 65px;
-    font: normal normal normal 15px/22px Poppins;
-    padding-bottom: 80px;
-}
-
-.get-things-done-faster-info p{
-    padding-right: 100px;
-    font: normal normal normal 15px/22px Poppins;
-    padding-bottom: 80px;
-
-
-}
-
-
-.our-expert-technology-info h2,
-.engaged-service-support-info h2{
     margin-top: 20px;
 }
+
+
 .our-expert-technology-info p{
-    padding-right: 43px;
+
+    max-width: 542px;
+}
+.engaged-service-support-info p
+{
+    max-width: 534px;
+}
+
+
+.gain-operational-fitness-info p{
+   
+    font: normal normal normal 15px/22px Poppins;
+    padding-bottom: 80px;
+}
+
+
+
+
+
+.our-expert-technology-info p{
+   
     font: normal normal normal 15px/22px Poppins;
     margin-top: 10px;
 
 }
 
 .engaged-service-support-info p{
-    padding-right: 100px;
     font: normal normal normal 15px/22px Poppins;
     margin-top: 10px;
 
@@ -1099,7 +1117,7 @@ margin: 20px 0;
 }
 
 .email-us-submit-btn button{
-    background: #28367D 0% 0% no-repeat padding-box;
+background: #28367D 0% 0% no-repeat padding-box;
 border-radius: 20px;
 padding: 7px 21px;
 color: #FFFFFF;
@@ -1163,6 +1181,8 @@ color: #FFFFFF;
 
 .get-in-touch-with-us-wrapper h2{
     font: normal normal 600 35px/53px Poppins;
+    max-width: 472px;
+    margin: 0 auto;
 
 }
 
@@ -1214,24 +1234,24 @@ color: #FFFFFF;
 }
 
 .gain-partner-with-extensive-telecom-industry-info1 h2{
-    padding-right: 138px;
+    max-width:447px;;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .gain-partner-with-extensive-telecom-industry-info1 p{
-    padding-right: 57px;
+    max-width: 528px;
 }
 
 
 .gain-partner-with-extensive-telecom-industry-info2 h2{
-    padding-right: 80px;
+    max-width: 550px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .gain-partner-with-extensive-telecom-industry-info2 p{
-    padding-right: 57px;
+    max-width: 512px;
     font: normal normal normal 15px/22px Poppins;
 }
 
@@ -1284,29 +1304,26 @@ color: #FFFFFF;
 }
 
 .use-actionable-benchmarking-info1 h2{
-    padding-right: 87px;
+    max-width: 510px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .use-actionable-benchmarking-info1 p{
-    padding-right: 49px;
-
-
+   max-width: 536px;
 }
 
 
 .use-actionable-benchmarking-info2 h2{
-    padding-right: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  max-width: 510px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
 }
 
 
 .use-actionable-benchmarking-info2 p{
-    padding-right: 24px;
-
+    max-width: 531px;
 }
 
 
@@ -1323,8 +1340,9 @@ color: #FFFFFF;
   .handle-all-things-telecom-banner{
     flex: 0 0 calc(50% - 25px);
     max-width: 50%;
-    /* background-color: red; */
+   
   }
+
 
   
  
@@ -1480,7 +1498,7 @@ color: #FFFFFF;
 }
 
 .get-migration-done-fast-banner{
-    flex: 0 0 45%;
+    flex: 0 0 calc(45% - 10px);
     max-width: 45%;
 }
 
@@ -1548,8 +1566,17 @@ color: #FFFFFF;
 /* ------------------------------------- Media Query--------------------------------------------- */
 
 
+@media screen and (max-width : 1100px) {
+.schedule-project-assessment-call-wrapper{
+    /* flex-wrap: wrap; */
+}
 
+    .schedule-project-assessment-call-info{
+        padding-left: 30px;
+    }
 
+    
+}
 @media screen and (max-width : 1125px){
     
     .quick-links{
@@ -1815,6 +1842,9 @@ body{
 }
 
 @media screen and (max-width : 812px){
+    .stay-informed-latest-tech-wrapper h2{
+        font-size: 30px;
+    }
     
 
     
@@ -1994,9 +2024,248 @@ body{
 
 
 
-  
+.gain-operational-fitness-info,
+.get-things-done-faster-info,
+.our-expert-technology-info,
+.engaged-service-support-info{
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
+.our-expert-technology-info,
+.engaged-service-support-info{
+    margin-top: 100px;
+}
+.gain-operational-fitness-info h2,
+.get-things-done-faster-info h2,
+.our-expert-technology-info h2,
+.engaged-service-support-info h2,
+
+.gain-operational-fitness-info p,
+.get-things-done-faster-info p,
+.our-expert-technology-info p,
+.engaged-service-support-info p{
+    max-width: 100%;
+}
+
+.schedule-project-assessment-call-wrapper{
+    flex-wrap: wrap;
+}
+
+.schedule-project-assessment-call-info,
+.schedule-project-assessment-call-banner{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+   
+}
+
+.schedule-project-assessment-call-wrapper-banner{
+   
+width: 100%;
+object-fit: cover;
+
+}
+
+.schedule-project-assessment-call-info h2{
+    margin-top: 20px;
+    font: normal normal 600 30px/46px Poppins;
+}
+
+.schedule-project-assessment-call-info p{
+    margin-top: 10px;
+    
+}
+  
+.gain-partner-with-extensive-telecom-industry-wrapper,
+.use-actionable-benchmarking-wrapper
+{
+    flex-wrap: wrap;
+}
+.gain-partner-with-extensive-telecom-industry-info1,
+.gain-partner-with-extensive-telecom-industry-info2,
+
+.use-actionable-benchmarking-info1,
+.use-actionable-benchmarking-info2
+
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.gain-partner-with-extensive-telecom-industry-info1 h2,
+.gain-partner-with-extensive-telecom-industry-info1 p,
+
+.gain-partner-with-extensive-telecom-industry-info2 h2,
+.gain-partner-with-extensive-telecom-industry-info2 p,
+
+.use-actionable-benchmarking-info1 h2,
+.use-actionable-benchmarking-info2 h2,
+.use-actionable-benchmarking-info1 p,
+.use-actionable-benchmarking-info2 p
+
+{
+    max-width: 100%;
+}
+
+
+.gain-partner-with-extensive-telecom-industry-info2,
+.use-actionable-benchmarking-info2
+{
+    margin-top: 80px;
+
+}
+
+
+.handle-all-things-telecom-wrapper{
+    flex-wrap: wrap;
+}
+
+.handle-all-things-telecom-info,
+.handle-all-things-telecom-banner{
+    flex: 0 0 calc(100% - 10px);
+    max-width: 100%;
+}
+
+
+
+.handle-all-things-telecom-info h2{
+    margin-top: 20px;
+}
+
+.stay-informed-latest-tech-wrapper{
+    padding: 40px 0;
+    max-width: 100%;
+}
+
+.schedule-enterprise-optimization-wrapper{
+    flex-wrap: wrap;
+}
+.schedule-enterprise-optimization-info{
+    flex:0 0 100%;
+    max-width: 100%;
+}
+.schedule-enterprise-optimization-banner{
+    flex:0 0 calc(100% - 10px);
+    max-width: 100%;
+}
+
+.schedule-enterprise-optimization-info h2{
+    margin-top: 20px;
+}
+
+.discover-assess-deliver-wrapper{
+    flex-wrap: wrap;
+}
+
+.discover-assess-deliver-info1,
+.discover-assess-deliver-info2,
+.discover-assess-deliver-info3{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.discover-assess-deliver-info2,
+.discover-assess-deliver-info3
+
+{
+    margin-top: 20px;
+}
+
+.get-migration-done-fast-wrapper{
+    flex-wrap: wrap;
+}
+
+.get-migration-done-fast-info{
+    flex:  0 0 100%;
+    max-width: 100%;
+    padding: 0;
+
+}
+.get-migration-done-fast-banner{
+    flex:  0 0 calc(100% - 10px);
+    max-width: 100%;
+    padding: 0;
+
+}
+
+.get-migration-done-fast-info{
+    order: 2;
+    margin-top: 20px;
+}
+
+.new-telecom-tech-wrapper{
+    flex-wrap: wrap;
+}
+
+.new-telecom-tech-banner,
+.new-telecom-tech-info,
+.get-everything-outfitted-banner,
+.get-everything-outfitted-info
+
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.new-telecom-tech-info{
+    margin-top: 20px;
+    padding: 0;
+}
+
+.new-telecom-tech-banner{
+    flex: 0 0 calc(100% - 10px);
+}
+
+.get-everything-outfitted-info{
+    order: 2;
+    margin-top: 20px;
+}
+.get-everything-outfitted-banner{
+    flex: 0 0 calc(100% - 10px);
+}
+
+.free-project-assessment-meeting-wrapper,
+.call-email-us-wrapper
+{
+    flex-wrap: wrap;
+}
+
+.free-project-assessment-meeting-info{
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.free-project-assessment-meeting-banner
+{
+    flex: 0 0 calc(100% - 10px);
+    max-width: 100%;
+    padding: 0;
+}
+.free-project-assessment-meeting-info{
+    margin-top: 20px;
+}
+
+.call-us-data{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.email-us-data{
+    margin-top: 80px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.email-us-data input,
+.email-us-data textarea{
+    width: 100%;
+}
+
+
+}
 
 
 
@@ -2103,6 +2372,44 @@ body{
     }
 
 }
+
+@media screen and (max-width : 714px){
+
+    .combining-human-intelligence-wrapper h2,
+    .contact-outline h2,
+    .stay-informed-latest-tech-wrapper h2,
+    .hybrid-approach-wrapper h2,
+    .technology-migration-wrapper h2
+    {
+        font-size: 25px;
+    }
+
+    .contact-outline a,
+    .technology-migration-wrapper p,
+    .combining-human-intelligence-wrapper p,
+    .stay-informed-latest-tech-wrapper p,
+    .stay-informed-latest-tech-wrapper p{
+
+        font-size: 14px;
+
+    }
+    
+}
+
+@media screen and (max-width : 561px){
+
+    .contact-outline-about a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 456px){
+
+    .contact-outline-about a{
+        font-size: 10px;
+    }
+
+}
 @media screen and (max-width : 768px){
     .contact-us{
         flex-wrap: wrap;
@@ -2118,7 +2425,7 @@ body{
      flex: 0 0 100%;
      max-width: 100%;
      margin: 40px auto;
-     padding: 0;
+     padding: 0 15px;
     
 
     
@@ -2171,6 +2478,7 @@ body{
 
 @media screen and (max-width : 500px){
 
+  
     .company-logo{
        
         margin: 0 30px;
@@ -2342,6 +2650,8 @@ body{
 
 }
   
+
+
 }
 
 @media screen and (max-width : 485px){
@@ -2349,8 +2659,73 @@ body{
     .cannon-group-info .under-line h3::before{
         top:55px
     }
+
+    .schedule-project-assessment-call-info a{
+        font-size: 14px;
+    }
 }
 
+@media screen and (max-width : 456px){
+
+   
+    .schedule-project-assessment-call-info a{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width : 462px){
+    .get-in-touch-with-us-wrapper h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 420px){
+
+   
+    .get-in-touch-with-us-wrapper h2{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width : 426px){
+
+   
+    .schedule-project-assessment-call-info a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 396px){
+
+   
+    .schedule-project-assessment-call-info a{
+        font-size: 11px;
+        
+    }
+}
+
+@media screen and (max-width : 364px){
+
+   
+    .schedule-project-assessment-call-info a{
+        font-size: 10px;
+        
+    }
+}
+
+@media screen and (max-width : 334px){
+
+   
+    .schedule-project-assessment-call-info a{
+        font-size: 9px;
+        
+    }
+}
 
 @media screen and (max-width : 433px){
     
@@ -2371,6 +2746,13 @@ body{
     }
 }
 
+@media screen and (max-width : 386px){
+
+    .contact-outline-about a{
+        font-size: 8px;
+    }
+
+}
 
 
 

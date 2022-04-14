@@ -76,7 +76,7 @@ $(function () {
 // active nav links
 
 $(function(){
-  $('.nav-link').each(function(){
+  $('.link').each(function(){
     console.log('link ******')
     console.log(window.location.pathname)
       if ($(this).prop('href') == window.location.href) {
@@ -143,6 +143,8 @@ $(function(){
 
   
 })
+
+
 })
 
 // if(window.screen.width === 478){
