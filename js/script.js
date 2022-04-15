@@ -77,10 +77,8 @@ $(function () {
 
 $(function(){
   $('.link').each(function(){
-    console.log('link ******')
-    console.log(window.location.pathname)
+    
       if ($(this).prop('href') == window.location.href) {
-          // $(this).addClass('active'); $(this).parents('li').addClass('active');
           $(this).css({
             "color":"#28367D",
             "border-bottom": "2px solid #28367D"
@@ -147,24 +145,3 @@ $(function(){
 
 })
 
-// if(window.screen.width === 478){
-//   console.log('screen size',window.screen.width)
-
-//   $(function () {
-//     $("#testimonials").owlCarousel({
-//       items: 3,
-//       autoplay: false,
-//       smartSpeed: 700,
-//       loop: true,
-//       autoplayHoverPause: true,
-//       nav: true,
-//       dots: false,
-//       navText: [
-       
-//         "<img src='Images/down-arrow.jpg'>",
-//         "<img src='Images/up-arrow.jpg'>",
-//       ],
-      
-//     });
-//   });
-// }

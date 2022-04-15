@@ -409,9 +409,9 @@ body {
 .dash-line h2::before{
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 30px;
-    top: 35px;
+    top: 45px;
     left: 48%;
     background: #28367D;
 
@@ -775,7 +775,13 @@ transform: translateY(-150%);
     color: #212121
 }
 
+.contact-us a{
+    text-decoration: none;
+}
 
+.call-us-data a{
+    text-decoration: none;
+}
 .footer-section .container{
     background-color: #E9EAF2;
     max-width: 100%;
@@ -783,13 +789,12 @@ transform: translateY(-150%);
 }
 
 .footer-wrapper{
-    /* position: fixed; */
-   left: 0;
-   bottom: 0;
-   max-width: 1170px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 30px 72px;
     margin: 0 auto;
     
@@ -798,16 +803,15 @@ transform: translateY(-150%);
 
 .fb-insta{
    
-   
-    margin-top: 30px;
+   margin-top: 30px;
    text-align: center;
 }
 
 .fb-insta img{
    
-    width: 20px;
-    height: auto;
-    margin: 0 10px;
+    width:20px;
+    height:auto;
+    margin:0 10px;
 }
 
 
@@ -2297,22 +2301,9 @@ object-fit: cover;
 
 }
 
-@media screen and (max-width : 675px){
-    .contact-outline .dash-line h2::before{
-        left: 47%;
-        top:40px
-    }
-
-}
 
 
-@media screen and (max-width : 633px){
-    .contact-outline .dash-line h2::before{
-        left: 47%;
-        top:70px
-    }
 
-}
 
 
 @media screen and (max-width : 679px){
@@ -2523,7 +2514,7 @@ object-fit: cover;
 
     .contact-outline .dash-line h2::before{
         left: 47%;
-        top:80px
+       
     }
 
     .cannon-group-info .under-line h3::before{
@@ -2651,6 +2642,22 @@ object-fit: cover;
 }
   
 
+
+}
+
+@media screen and (max-width : 547px){
+
+    .fortune-companies-wrapper h2::before{
+        top: 95%;
+    }
+
+}
+
+@media screen and (max-width : 695px){
+
+    .contact-outline h2::before{
+        top: 95%;
+    }
 
 }
 
