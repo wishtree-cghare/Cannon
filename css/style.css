@@ -29,12 +29,17 @@ body {
     width: 100%;
   }
 
- 
+
     .up-arrow{
         width: 20px;
         height: 20px;
         margin-left: 10px;
+        transition: all 400ms;
     }  
+
+    .up-arrow:hover{
+        transform: translateX(40%);
+    }
 
   /* ------------------
         sidebar
@@ -379,6 +384,8 @@ body {
    
 }
 
+
+
 .contact-negotiation-text,
 .mobile-tickets-text,
 .statisfaction-text
@@ -412,7 +419,8 @@ body {
     height: 3px;
     width: 30px;
     top: 45px;
-    left: 48%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #28367D;
 
 }
@@ -729,7 +737,6 @@ transform: translateY(-150%);
 }
 
 .contact-us-btn-about{
-
     padding: 8px 20px;
     font: normal normal 600 15px/30px Poppins;
     border-radius: 30px;
@@ -737,10 +744,11 @@ transform: translateY(-150%);
     color: #28367D;
     text-decoration: none;
 }
+
 .contact-outline-about{
     margin-top: 32px;
-
 }
+
 .map,.contact-data{
     flex:0 0 50%;
     max-width: 50%;
@@ -751,6 +759,7 @@ transform: translateY(-150%);
     width: 100%;
     object-fit: cover;
 }
+
 .contact-data{
     padding: 0 15px;
     margin-top: 0;
@@ -784,8 +793,7 @@ transform: translateY(-150%);
 }
 .footer-section .container{
     background-color: #E9EAF2;
-    max-width: 100%;
-    
+    max-width: 100%;    
 }
 
 .footer-wrapper{
@@ -796,36 +804,27 @@ transform: translateY(-150%);
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px 72px;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
 
 .fb-insta{
-   
    margin-top: 30px;
    text-align: center;
 }
 
 .fb-insta img{
-   
     width:20px;
     height:auto;
     margin:0 10px;
 }
 
-
-
-
 .cannon-group-logo,
 .signup,
 .quick-links{
-   
     flex: 0 0 calc(33.333% - 100px);
     max-width: 33.333%;
 }
-
-
 
 .signup h5{
     margin-bottom:10px;
@@ -836,9 +835,7 @@ transform: translateY(-150%);
     border-radius: 20px;
     height: 36px;
     width: 344px;
-    border-color: transparent;
-
-   
+    border-color: transparent;   
 }
 
 
@@ -910,9 +907,6 @@ transform: translateY(-150%);
     flex: 0 0 calc(50% - 15px);
     max-width: 50%;
 }
-/* .schedule-project-assessment-call-info{
-    padding-left: 65px;
-} */
 
 .schedule-project-assessment-call-info h2{
     margin-bottom: 10px;
@@ -936,7 +930,6 @@ transform: translateY(-150%);
 
 .combining-human-intelligence-wrapper{
     background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') center/cover no-repeat;
-
     color: #FFFFFF;
     padding: 87px 0px;
     text-align: center;
@@ -948,15 +941,11 @@ transform: translateY(-150%);
     font-weight: 600;
     max-width: 636px;
     margin: 0 auto;
-    /* line-height: 53px; */
-
 }
 
 .combining-human-intelligence-wrapper p{
     max-width: 564px;
     margin: 0 auto;
-    
-  
 }
 
 .gain-operational-fitness{
@@ -979,7 +968,6 @@ transform: translateY(-150%);
 }
 
 .gain-operational-fitness-info h2{
-    /* padding-right: 103px; */
     max-width: 485px;
     font: normal normal 600 30px/46px Poppins;
     margin-top: 20px;
@@ -995,8 +983,6 @@ transform: translateY(-150%);
     max-width: 469px;
     font: normal normal 600 30px/46px Poppins;
     margin-top: 20px;
-
-
 }
 .get-things-done-faster-info p{
     margin-top: 10px;
@@ -1008,12 +994,9 @@ transform: translateY(-150%);
     font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
     margin-top: 20px;
-
-
 }
 
 .engaged-service-support-info h2{
-
     max-width: 530px;
     font: normal normal 600 30px/46px Poppins;
     margin-bottom: 10px;
@@ -1022,14 +1005,13 @@ transform: translateY(-150%);
 
 
 .our-expert-technology-info p{
-
     max-width: 542px;
 }
+
 .engaged-service-support-info p
 {
     max-width: 534px;
 }
-
 
 .gain-operational-fitness-info p{
    
@@ -1038,22 +1020,17 @@ transform: translateY(-150%);
 }
 
 
-
-
-
 .our-expert-technology-info p{
    
     font: normal normal normal 15px/22px Poppins;
     margin-top: 10px;
-
 }
 
 .engaged-service-support-info p{
     font: normal normal normal 15px/22px Poppins;
     margin-top: 10px;
-
-
 }
+
 
 /* ------------------------------- Solutions ------------------------------------- */
 .call-email-us-wrapper{
@@ -1087,45 +1064,38 @@ transform: translateY(-150%);
 
 
 .email-us-inputs input
-
 {
-width: 750px;
-height: 36px;
-/* UI Properties */
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #B7B7B7;
-border-radius: 20px;
-margin: 20px 0;
+    width: 750px;
+    height: 36px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 20px;
+    margin: 20px 0;
 }
 
 .email-us-inputs input:focus,
 .email-us-inputs textarea:focus
-
-
 {
 
-    /* border: 0; */
     outline: 0;
 
-    }
-
+}
 
 .email-us-inputs textarea{
     width: 750px;
-height: 72px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #B7B7B7;
-border-radius: 20px;
-margin: 20px 0;
+    height: 72px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 20px;
+    margin: 20px 0;
 
 }
 
 .email-us-submit-btn button{
-background: #28367D 0% 0% no-repeat padding-box;
-border-radius: 20px;
-padding: 7px 21px;
-color: #FFFFFF;
-
+    background: #28367D 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    padding: 7px 21px;
+    color: #FFFFFF;
 
 }
 
@@ -1172,15 +1142,12 @@ color: #FFFFFF;
 .get-in-touch-with-us-wrapper{
     margin-top: 15px;
     background:linear-gradient(rgba(40, 54, 125, 0.9),rgba(40, 54, 125, 0.8)),url('../Images/touch-with-us.jpg') center/cover no-repeat;
-
     color:#FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 150px 0;
-    height: 350px;
-
-    
+    height: 350px;   
 }
 
 .get-in-touch-with-us-wrapper h2{
@@ -1195,6 +1162,7 @@ color: #FFFFFF;
 .hybrid-approach .container{
     max-width: 100%;
 }
+
 .hybrid-approach-wrapper{
     background:linear-gradient(rgba(40, 54, 125, 0.5),rgba(40, 54, 125, 0.8)),url('../Images/Mask\ Group\ 17.jpg') center/cover  no-repeat;
     padding:87px 0;
@@ -1216,9 +1184,6 @@ color: #FFFFFF;
     margin-left: 17px;
 }
 
-/* .gain-partner-with-extensive-telecom-industry{
-    background: url('../Images/Group\ 371.jpg');
-} */
 
 .gain-partner-with-extensive-telecom-industry-wrapper{
     display: flex;
@@ -1226,6 +1191,7 @@ color: #FFFFFF;
     margin-top: 80px;
 
 }
+
 .gain-partner-with-extensive-telecom-industry-info1,
 .gain-partner-with-extensive-telecom-industry-info2{
     flex: 0 0 calc(50% - 15px);
@@ -1258,7 +1224,6 @@ color: #FFFFFF;
     max-width: 512px;
     font: normal normal normal 15px/22px Poppins;
 }
-
 
 .discover-assess-deliver-wrapper{
         display: flex;
@@ -1297,6 +1262,7 @@ color: #FFFFFF;
     justify-content: space-between;
     margin-top: 80px;
 }
+
 .use-actionable-benchmarking-info1,
 .use-actionable-benchmarking-info2{
     flex: 0 0 calc(50% - 15px);
@@ -1347,16 +1313,11 @@ color: #FFFFFF;
    
   }
 
-
-  
- 
   
   .handle-all-things-telecom-info ul  {
     list-style: none;
     position: relative;
     margin: 0 20px;
-
-  
     
   }
   
@@ -1374,6 +1335,7 @@ color: #FFFFFF;
       margin-left: 20px;
       
   }
+  
   .handle-all-things-telecom-info h2{
     margin-bottom: 10px;
     

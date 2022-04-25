@@ -3,12 +3,8 @@ const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 
-
-
-
 // show sidebar
 navBtn.addEventListener("click", function () {
- 
   sidebar.classList.add("show-sidebar");
 });
 closeBtn.addEventListener("click", function () {
@@ -87,8 +83,7 @@ $(function(){
       }
 
       if(window.location.pathname === '/contact.html'){
-        console.log("hii")
-        console.log(this)
+       
         $('.contact-href').css({
           "color":"#FFFFFF",
           "border-bottom": "2px solid #E1E1E1"
@@ -113,14 +108,7 @@ $(function(){
       }
 
       if(window.location.pathname === '/workforcelogin.html'){
-        console.log("hii")
-        console.log(this)
-        $('.workforce-href').css({
-          // "border-bottom": "2px solid #28367D",
-          // "color":"#FFFFFF",
-          // "background": "#28367D"
-          
-        })
+       
 
         $('.workforce-href').hover(function(){
           $(this).css({
@@ -136,12 +124,8 @@ $(function(){
           
         });
       })
-    }
-      
-
-  
+    }  
 })
-
 
 })
 
