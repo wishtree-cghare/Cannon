@@ -15,6 +15,9 @@ body {
     line-height: 1.4rem;
  }
 
+a:hover{
+   
+}
 
  h1{
      line-height: 1.5rem;
@@ -761,11 +764,13 @@ transform: translateY(-150%);
 }
 
 .contact-data{
-    padding: 0 15px;
+    padding-left:50px;
     margin-top: 0;
    
 }
-
+.contact-us-data{
+    margin-top: 30px;
+}
 .contact-data h2{
     margin-top: 0;
 }
@@ -856,7 +861,7 @@ transform: translateY(-150%);
     padding: 7px 20px;
     background-color: #28367D;
     color: #fff;
-   margin-top: 20px;
+   margin-top: 10px;
   
 }
 
@@ -874,7 +879,7 @@ transform: translateY(-150%);
 }
 
 .font-awesome-icon{
-    color: blue;
+    color: #28367D;
    
 }
 
@@ -1860,7 +1865,7 @@ body{
     }
 
     .statistics-wrapper h2::before{
-        left: 0%;
+        left: 2%;
     }
 
   .enterprise-wrapper{
@@ -1970,7 +1975,8 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     /* width: 100%; */
-    padding: 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     
 }
 
@@ -2320,6 +2326,7 @@ object-fit: cover;
 
 @media screen and (max-width : 650px){
 
+ 
     .company-logo{
         margin: 0 40px;
     }
@@ -2332,9 +2339,15 @@ object-fit: cover;
     .contact-outline h2,
     .stay-informed-latest-tech-wrapper h2,
     .hybrid-approach-wrapper h2,
-    .technology-migration-wrapper h2
+    .technology-migration-wrapper h2,
+    .enterprise-info h2,
+    .statistics-wrapper h2,
+    .orchestration-management-info h2,
+    .cost-containment-info h2,
+    .fortune-companies-wrapper h2,
+    .contact-us h2
     {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .contact-outline a,
@@ -2408,6 +2421,7 @@ object-fit: cover;
 
 @media screen and (max-width : 540px){
 
+  
    .contact-us{
        flex-wrap: wrap;
        /* flex-direction: column; */
