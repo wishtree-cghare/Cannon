@@ -74,7 +74,7 @@ $(function () {
 $(function(){
   $('.link').each(function(){
     
-      if ($(this).prop('href') == window.location.href) {
+      if ($(this).prop('href') == window.location.href && window.location.pathname !== '/workforcelogin.html' ) {
           $(this).css({
             "color":"#28367D",
             "border-bottom": "2px solid #28367D"
@@ -108,19 +108,25 @@ $(function(){
       }
 
       if(window.location.pathname === '/workforcelogin.html'){
-       
 
+        $('.workforcelogin').css({
+          
+          "color":"#FFFFFF"
+         
+
+        })
         $('.workforce-href').hover(function(){
           $(this).css({
            
           "color":"#FFFFFF",
-
-          
+                    
           });
         }, function(){
         $(this).css({
          
           "color": "#28367D",
+          
+          
           
         });
       })
